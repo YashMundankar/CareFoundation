@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/index.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Hahmlet&display=swap" rel="stylesheet">
+    <link rel="shortcut icon" href="img/care.png" type="image/x-icon">
+    <title>Care Foundation</title>
+
+</head>
+
+<body>
+    <header>
+        <nav id="navbar">
+            <div class="logo">
+                <img src="img/care.png" alt="">
+            </div>
+            <ul>
+                <li><a href="#" alt="">Home</a></li>
+                <li><a href="#about" alt="">About Us</a></li>
+                <li><a href="https://www.worldvision.org/hunger-news-stories/world-hunger-facts#:~:text=How%20many%20people%20are%20hungry,exceed%20840%20million%20by%202030."
+                        alt="">Know More</a></li>
+                <li><a href="#contact" alt="">Contact us</a></li>
+            </ul>
+        </nav>
+    </header>
+    <section class="home">
+        <h1>
+            Welcome To Care foundatation
+        </h1>
+        <p>People forget that it doesn't take a big donation to help someone, just a lot of little donations. </p>
+        <p>Lets make a difference together.</p>
+        <button class="btn " id="donate" onclick="ClickedDonate()">
+            Donate
+        </button>
+    </section>
+
+    <section class="about-us">
+        <div class="heading">
+            <h1 id="about">
+                About Us
+            </h1>
+            <div class="cont">
+                Proving its mettle as an NGO for hunger in India, Hindrise Foundation is bringing a reduction in hunger
+                among the underserved section of societies within the geographical borders. We ensure regular meals on a
+                daily basis for hunger-stricken children so that they can evolve in a fit and healthy manner and become
+                the precious assets for the nation's development.
+
+                As an NGO for hunger in India, we envision a world where nobody will sleep empty-stomached as all the
+                Indians should have access to necessary pulses and cereals, in-depth knowledge about the worth of
+                healthcare and nutrition and hygienic food that would increase their longevity.
+
+                As per the global reports, more than 820 million people are facing hunger-related issues all over the
+                world. According to the study of the World Food Programme, one in every nine people sleeps without
+                getting a daily meal. Although India's growth has been nothing less than phenomenal in the last two
+                decades along with the increase in food grain production, unfortunately, a notable section of India's
+                population can't manage three square meals for themselves.
+
+                The largest undernourished population residing in the world belongs to India.
+            </div>
+        </div>
+    </section>
+    <section class="contact-us">
+        <div class="heading">
+            <h1 id="contact">
+                Contact us
+            </h1>
+        </div>
+        <div class="form">
+            <div class="form-item">
+                <label for="name">Name : </label>
+                <input type="text" name="name" id="name" placeholder="Enter Your  Name">
+            </div>
+            <div class="form-item">
+                <label for="email">Email : </label>
+                <input type="email" name="email" id="email" placeholder="Enter Your  Email">
+            </div>
+            <div class="form-item">
+                <label for="phone">Phone : </label>
+                <input type="text" name="phone" id="phone" placeholder="Enter Your Number">
+            </div>
+            <div class="form-item">
+                <label for="message">Message : </label>
+                <textarea name="messsage" id="message" cols="30" rows="10" placeholder="Enter Your Messege"></textarea>
+            </div>
+            <div class="form-item">
+                <input type="submit" value="Submit">
+            </div>
+        </div>
+
+    </section>
+
+    <footer>
+        <div class="copyright">
+            Copyright &copy; www.carefoundation.com . All rights Reserved!
+        </div>
+    </footer>
+
+
+
+
+    <script>
+        let ClickedDonate = () => {
+            window.location.href = "checkout.html";
+            console.log("Clicked");
+        }
+
+        let submitted = () => {
+            var frm = document.getElementsByName('contact-form')[0];
+            frm.submit(); 
+            frm.reset();  
+            return false; 
+        }
+    </script>
+</body>
+
+</html>

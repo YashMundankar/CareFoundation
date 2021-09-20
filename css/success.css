@@ -1,0 +1,32 @@
+.container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin-top: 150px;
+}
+.container img{
+    width:100px;
+    transition-property: width;
+    transition-duration: 2s;
+    animation-name: example;
+    animation-duration: 1.5s;
+    padding:20px;
+}
+
+@keyframes example {
+    0% {
+      transform: scale(1);
+    }
+    50% {
+        transform: scale(1.3);
+      }
+    100% {
+      transform: scale(1);
+    }
+  }
+.container  h2{
+    color: #65a700;
+    font-family: cursive;
+}
+

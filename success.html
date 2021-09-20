@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/success.css">
+    <link rel="shortcut icon" href="img/care.png" type="image/x-icon">
+    <!-- <script src="js/success.js"></script> -->
+    <title>Success</title>
+
+</head>
+
+<body>
+    <div class="container">
+        <div class="success-img">
+            <img src='img/success-icon-23194.png'>
+        </div>
+        <div class="text">
+            <h2>Payment Successful !</h2>
+        </div>
+        <div class="redirect">
+            <p>Redirecting to Home Page in <span id="count"></span></p>
+        </div>
+    </div>
+</body>
+
+<script>
+    setInterval(() => {
+        my_count.innerText = count;
+        count = count - 1;
+
+    }, 1000);
+    let goHome = () => {
+        window.location.href = "index.html";
+    }
+    setTimeout(goHome, 4000);
+    let count = 3;
+    let my_count = document.getElementById("count");
+
+
+</script>
+
+</html>
